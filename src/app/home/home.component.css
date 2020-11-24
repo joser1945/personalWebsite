@@ -47,6 +47,17 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    z-index: 999;
+    transition: background 1s ease;
+}
 /*      EndOfNavbar        */
 
 /*      Banner Area      */
@@ -91,6 +102,28 @@
     text-transform: uppercase;
 }
 
+.para {
+    color: #777777;
+    font: normal 500 16px/ 25px 'Georgia',cursive;
+}
+
+.font-roboto {
+    font-family: 'Georgia',cursive;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn .active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1 {
+    font: normal bold 39px/ 40px 'Georgia',cursive;
+}
+
 #button {
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px;
@@ -108,6 +141,14 @@
 }
 
 #button3 {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+#button4 {
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px;
     position: relative;
@@ -153,3 +194,128 @@
     box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 /*      Banner Area      */
+
+/* Start About Area */ 
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/ 60px 'Georgia', cursive;
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+    padding: .4rem 0;
+}
+/* End About Area */ 
+
+/* Services Area */ 
+.site-main .services-area {
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main > .services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover {
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+/* End Services Area */ 
+
+/* Project Area */ 
+.site-main .project-area {
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px 'Georgia',cursive;
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+    font: normal 700 25px/12px 'Georgia',cursive;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* End Project Area */ 
+
+/* Subscribe me */ 
+.site-main .subscribe-us-area .subscribe {
+    background: url(../../assets/images/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+    font: normal 700 30px/ 30px 'Georgia',cursive;
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px 'Georgia',cursive;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder {
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+}
+/* End subscribe me */ 
+
+/*      Footer Area      */
+.footer-area {
+    padding: 5rem 0;
+    background: url(../../assets/images/footer-bg.png) no-repeat;
+}
+
+.footer-area .social h5 {
+    font: normal 500 23px/ 30px 'Georgia',cursive;
+}
+
+.footer-area .social a > i {
+    font-size:22px;
+    padding: 2rem;
+    color: #201f1f17;
+}
+
+.footer-area .social a:hover > i {
+    color: #4458dc;
+}
+/*      Footer Area      */
